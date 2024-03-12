@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador y Descodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <header>
+        <h1 class="titulo">Encriptador de mensajes</h1>
+    </header>
+
+    <main>
+        <section class="mensaje">
+            <div>
+                <textarea class="areatexto" id="encriptarTexto" placeholder="Igrese el texto aqui" required></textarea>
+                
+            </div>             
+
+            <div class="botones">    
+                <button onclick="btnEncriptar()" class="botonCodificar">Codificar</button>
+                <img class="imgCandado" src="imagenes/candado-cerrado.png" alt="Candado cerrado">
+                <button onclick="btnDesencriptar()" class="botonDescodificar">Descodificar</button>  
+                <img class="imgCandado" src="imagenes/candado-abierto.png" alt="Candado abierto">      
+            </div> 
+              
+        </section>
+
+        <section class="encriptacion">
+            <textarea class="areaMensaje" id="mostrarMensaje" readonly></textarea>
+            <div id="visualizacion">  
+                <button onclick="btnCopiar()" class="botonCopiar" id="copiar">Copiar</button>
+            </div>   
+        </section>
+                  
+    </main>
+    
+    <footer>
+        <p class="info">Christian Paredes - 11/03/2024</p>
+    </footer>
+
+    <script src="Decodificador.js"></script>
+</body>
+
+
+
+</html>
